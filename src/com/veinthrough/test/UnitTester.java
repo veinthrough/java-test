@@ -6,6 +6,7 @@ package com.veinthrough.test;
  * @author veinthrough
  */
 public interface UnitTester {
+    UnitTester setArgs( String[] args);
 
     /**
      * all unit testers should implement this interface.

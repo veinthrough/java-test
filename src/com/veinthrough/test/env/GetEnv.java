@@ -43,4 +43,9 @@ public class GetEnv implements UnitTester{
         System.out.println( "Path = \"" + System.getenv("Path") + "\"");
         System.out.println( "PATH = \"" + System.getenv("PATH") + "\"");
     }
+
+    @Override
+    public UnitTester setArgs(String[] args) {
+        return this;
+    }
 }
