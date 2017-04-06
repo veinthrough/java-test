@@ -1,8 +1,7 @@
 package com.veinthrough.test.env;
 
 import java.util.Properties;
-
-import com.veinthrough.test.UnitTester;
+import com.veinthrough.test.AbstractUnitTester;
 
 /**
  * List one or more item(s) from System Properties
@@ -15,15 +14,8 @@ import com.veinthrough.test.UnitTester;
  *
  * @author veinthrough
  */
-public class SysProp implements UnitTester {
-    private String[] args= new String[0];
+public class SysProp extends AbstractUnitTester {
     private Properties properties= System.getProperties();
-
-    @Override
-    public UnitTester setArgs( String[] args) {
-        this.args= args;
-        return this;
-    }
 
     @Override
     public void test() {

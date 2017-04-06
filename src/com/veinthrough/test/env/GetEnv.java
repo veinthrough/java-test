@@ -4,7 +4,7 @@
 package com.veinthrough.test.env;
 
 import java.util.Map;
-import com.veinthrough.test.UnitTester;
+import com.veinthrough.test.AbstractUnitTester;
 
 /**
  * Demo of System.getenv().
@@ -18,7 +18,7 @@ import com.veinthrough.test.UnitTester;
  *
  * @author veinthrough
  */
-public class GetEnv implements UnitTester{
+public class GetEnv extends AbstractUnitTester{
 
     public static void main(String[] args) {
         new GetEnv().test();
@@ -42,10 +42,5 @@ public class GetEnv implements UnitTester{
         //PATH
         System.out.println( "Path = \"" + System.getenv("Path") + "\"");
         System.out.println( "PATH = \"" + System.getenv("PATH") + "\"");
-    }
-
-    @Override
-    public UnitTester setArgs(String[] args) {
-        return this;
     }
 }
