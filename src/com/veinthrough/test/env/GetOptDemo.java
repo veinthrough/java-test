@@ -5,6 +5,24 @@ import com.veinthrough.lang.GetOpt;
 import com.veinthrough.lang.GetOptDesc;
 import java.util.*;
 
+/** Demonstrate the modern way of using GetOpt. This allows a subset of
+ * <pre>UNIX sort options: sort -n -o outfile infile1 infile2</pre>
+ * which means: sort numerically (-n), writing to file "outfile" (-o
+ * outfile), sort from infile1 and infile2.
+ * <p>
+ * tests:
+ * <p>
+ * java environ.GetOptDemo -M
+ * <p>
+ * java environ.GetOptDemo -n a b c
+ * <p>
+ * java environ.GetOptDemo -numeric a b c
+ * <p>
+ * java environ.GetOptDemo -numeric -output-file /tmp/foo a b c
+ * <p>
+ *
+ * @author veinthrough
+ */
 public class GetOptDemo extends AbstractUnitTester {
 
     @Override
