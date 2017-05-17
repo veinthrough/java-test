@@ -3,7 +3,9 @@ package com.veinthrough.test;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.veinthrough.test.env.CheckForClass;
 import com.veinthrough.test.env.GetEnv;
+import com.veinthrough.test.env.SysProp;
 
 /**
  * @author veinthrough
@@ -19,6 +21,8 @@ public class Tester {
         Tester tester= new Tester();
 
         tester.add( new GetEnv());
+        tester.add( new SysProp().setArgs( args));
+        tester.add( new CheckForClass().setArgs( args));
 
         tester.test();
     }
