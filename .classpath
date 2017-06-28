@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_65"/>
 	<classpathentry kind="src" path="/veinthrough-api"/>
+	<classpathentry kind="lib" path="Y:/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="C:/Users/鹏/AppData/Local/Temp/decompiler/source/guava-18.0-sources-1498634126397.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
