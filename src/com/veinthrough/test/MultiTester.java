@@ -10,7 +10,7 @@ import com.veinthrough.test.env.SysProp;
 /**
  * @author veinthrough
  */
-public class Tester {
+public class MultiTester {
 
     /**
      * a list of all testers to be executed.
@@ -18,7 +18,7 @@ public class Tester {
     List<UnitTester> unitTesters= new ArrayList<>();
 
     public static void main(String[] args) {
-        Tester tester= new Tester();
+        MultiTester tester= new MultiTester();
 
         tester.add( new GetEnv());
         tester.add( new SysProp().setArgs( args));
@@ -33,7 +33,7 @@ public class Tester {
      * @param unitTester tester to add
      * @return           always this to provide a sequence calling
      */
-    public Tester add( UnitTester unitTester) {
+    public MultiTester add( UnitTester unitTester) {
         this.unitTesters.add(unitTester);
         return this;
     }
